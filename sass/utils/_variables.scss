@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Inter-Regular;
+  src: url(../../fonts/static/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Inter-SemiBold;
+  src: url(../../fonts/static/Inter-SemiBold.ttf);
+}
+
+$primaryfont: ('Inter-Regular', sans-serif);
+$seconderyfont: ('Inter-SemiBold', sans-serif);
+
+:root {
+  --blue: #345ff6;
+  --gunmetal: #253347;
+  --dark-electric-blue: #5e6e85;
+  --background-img: #e7f5fe;
+  --borders: #d8e2e7;
+  --pure-white: #fff;
+  --gradient-1: linear-gradient(
+    290deg,
+    #d6e6fe 0%,
+    rgba(214, 252, 254, 0) 100%
+  );
+}

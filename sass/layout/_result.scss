@@ -1,0 +1,119 @@
+.result {
+  margin: 72px auto 0 auto;
+  width: 375px;
+  height: 744px;
+  &__img {
+    width: 375px;
+    height: 354px;
+    position: relative;
+  }
+  &__img-background {
+    width: 375px;
+    height: 258px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    border-radius: 32px;
+    background: var(--background-img);
+  }
+  &__img-picture {
+    margin: auto;
+    width: 311px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  &__text {
+    margin: auto;
+    width: 325px;
+  }
+  &__text-heading {
+    margin: 43px auto 0 auto;
+    font-size: 32px;
+    letter-spacing: -1.6px;
+  }
+  &__text-content {
+    margin: 30px auto 0 auto;
+    color: var(--dark-electric-blue);
+  }
+  &__pattern {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .result {
+    margin-top: 96px;
+    width: 768px;
+    height: 411px;
+    position: relative;
+    &__img {
+      width: 435px;
+      height: 411px;
+      position: absolute;
+      left: -75px;
+    }
+    &__img-background {
+      width: 435px;
+      height: 299px;
+    }
+    &__img-picture {
+      width: 361px;
+    }
+    &__text {
+      width: 335px;
+      position: absolute;
+      right: 37px;
+    }
+    &__text-heading {
+      margin-top: 35px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .result {
+    margin-top: 64px;
+    width: 1160px;
+    height: 533px;
+    &__img {
+      width: 564px;
+      height: 533px;
+      left: 0;
+    }
+    &__img-background {
+      width: 564px;
+      height: 388px;
+    }
+    &__img-picture {
+      width: 468px;
+    }
+    &__text {
+      width: 465px;
+      right: 0;
+      top: 184px;
+    }
+    &__text-heading {
+      margin-top: 0;
+      font-size: 48px;
+      letter-spacing: -2.4px;
+    }
+    &__text-content {
+      margin: 35px auto auto 0;
+      width: 465px;
+    }
+    &__pattern {
+      width: 85px;
+      height: 200px;
+      display: block;
+      position: absolute;
+      bottom: 385px;
+      right: 27px;
+    }
+  }
+}

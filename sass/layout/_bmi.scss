@@ -1,0 +1,142 @@
+.bmi {
+  margin: 72px 29px 96px auto;
+  width: 327px;
+  &__heading {
+    margin: auto;
+    width: 327px;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: -1.6px;
+  }
+  &__text {
+    margin: 32px auto 0 auto;
+    width: 325px;
+    text-align: center;
+    color: var(--dark-electric-blue);
+  }
+  &__pattern {
+    display: none;
+  }
+}
+.bmi-list {
+  margin: 56px auto 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bmi-item {
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--pure-white);
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+  &__headline {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__headline-icon {
+    width: 32px;
+    height: 32px;
+  }
+  &__headline-text {
+    font-size: 20px;
+    letter-spacing: -1px;
+  }
+  &__text {
+    margin-top: 16px;
+    color: var(--dark-electric-blue);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .bmi {
+    margin: 96px auto;
+    width: 686px;
+    &__text {
+      width: 645px;
+    }
+  }
+  .bmi-list {
+    flex-direction: unset;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    column-gap: 15px;
+  }
+  .bmi-item {
+    padding: 32px;
+    width: 271px;
+    &:last-child {
+      width: 301px;
+    }
+    &__headline {
+      margin: 0;
+    }
+    &__text {
+      width: unset;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bmi {
+    margin: 120px auto;
+    width: 1160px;
+    height: 704px;
+    position: relative;
+    &__heading {
+      width: unset;
+      position: absolute;
+      text-align: left;
+      font-size: 48px;
+      letter-spacing: -2.4px;
+    }
+    &__text {
+      margin: 0;
+      position: absolute;
+      top: 88px;
+      width: 535px;
+      text-align: left;
+    }
+    &__pattern {
+      width: 94px;
+      height: 122px;
+      display: block;
+      position: absolute;
+      top: 251px;
+      left: 165px;
+    }
+  }
+  .bmi-list {
+    margin: 0;
+    display: block;
+  }
+  .bmi-item {
+    width: 301px;
+    height: unset;
+    position: absolute;
+    &__text {
+      width: 300px;
+    }
+    &--first {
+      right: 99px;
+    }
+    &--second {
+      top: 264px;
+      right: 397px;
+    }
+    &--third {
+      top: 264px;
+      right: 0;
+    }
+    &--fourth {
+      top: 472px;
+      right: 596px;
+    }
+    &--fifth {
+      top: 472px;
+      right: 199px;
+    }
+  }
+}

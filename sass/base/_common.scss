@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $primaryfont;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gunmetal);
+}
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 64px;
+  line-height: 110%;
+  font-family: $seconderyfont;
+}
+h2 {
+  font-size: 48px;
+  line-height: 110%;
+  font-family: $seconderyfont;
+}
+h3 {
+  font-size: 24px;
+  line-height: 110%;
+  font-family: $seconderyfont;
+}
+h4 {
+  font-size: 20px;
+  line-height: 110%;
+  font-family: $seconderyfont;
+}
+.hidden {
+  display: none;
+}
